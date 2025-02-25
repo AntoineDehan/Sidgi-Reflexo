@@ -1,0 +1,19 @@
+{
+  "sliderImages": [
+    {
+      "id": 1,
+      "url": "/src/assets/placeholder_1.jpg",
+      "alt": "Massage des pieds en réflexologie"
+    },
+    {
+      "id": 2,
+      "url": "/src/assets/placeholder_2.jpg",
+      "alt": "Huiles essentielles et galets"
+    },
+    {
+      "id": 3,
+      "url": "/src/assets/placeholder_3.jpg",
+      "alt": "Praticienne en réflexologie"
+    }
+  ]
+}

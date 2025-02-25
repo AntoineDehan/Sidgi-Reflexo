@@ -1,0 +1,47 @@
+@use "../../main.scss" as *;
+
+.slideshow {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  position: relative;
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  &__arrow {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 95%;
+  }
+  &__counter {
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slideshow {
+    height: 350px;
+    &__counter {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .slideshow__arrow {
+    img {
+      width: 20px;
+    }
+  }
+}

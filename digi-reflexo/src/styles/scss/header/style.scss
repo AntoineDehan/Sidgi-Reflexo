@@ -1,0 +1,22 @@
+@use "../../main.scss" as *;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $main-color;
+  padding-left: 15px;
+  padding-right: 15px;
+  .logo {
+    width: 15%;
+  }
+  nav {
+    display: flex;
+    gap: 10px;
+    a {
+      font-size: 1.35rem;
+      text-decoration: none;
+      color: #faf8f3;
+    }
+  }
+}

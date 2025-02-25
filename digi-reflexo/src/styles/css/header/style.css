@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b2a4d5;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header .logo {
+  width: 15%;
+}
+header nav {
+  display: flex;
+  gap: 10px;
+}
+header nav a {
+  font-size: 1.35rem;
+  text-decoration: none;
+  color: #faf8f3;
+}
+
+/*# sourceMappingURL=style.css.map */

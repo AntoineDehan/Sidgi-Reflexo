@@ -1,0 +1,48 @@
+@use "../../main.scss" as *;
+
+.footer-conteneur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", serif;
+  background-color: $main-color;
+  color: $tertiary-color;
+  .footer-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  a {
+    color: $tertiary-color;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+
+    .submit-btn {
+      margin-top: 10px;
+      width: 50%;
+      height: 30px;
+      align-self: center;
+      border-radius: 10px;
+      border: $secondary-color solid 2px;
+      color: $secondary-color;
+      background-color: $tertiary-color;
+    }
+    label {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+      margin-top: 15px;
+    }
+    .input {
+      width: 350px;
+      border-radius: 8px;
+      border: $secondary-color solid 2px;
+    }
+    .email-input {
+      height: 25px;
+    }
+    .message-input {
+      height: 200px;
+    }
+  }
+}

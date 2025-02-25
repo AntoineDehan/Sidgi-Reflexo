@@ -1,0 +1,28 @@
+.banner-conteneur {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.banner-conteneur .banner-content {
+  width: 500px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+}
+.banner-conteneur .banner-content h1 {
+  margin: 0;
+}
+.banner-conteneur .banner-content h2 {
+  margin: 0 0 10px 0;
+}
+.banner-conteneur .banner-content .overlay {
+  background-color: black;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+}
+
+/*# sourceMappingURL=style.css.map */
