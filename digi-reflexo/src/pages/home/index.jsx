@@ -1,10 +1,27 @@
 import Banner from "../../componants/banner";
+import About from "../../componants/about";
+import Prestation from "../../componants/prestation";
+import Seocontent from "../../componants/seocontent";
+
+import AboutData from "../../data/about/dehanjenny.json";
+import PrestationData from "../../data/offres/offres.json";
+import SeoContentData from "../../data/seocontent/content.json";
+
+import "../../styles/css/home/style.css";
 
 function Home() {
   return (
     <div className="main-conteneur">
-      <h1>Sidgi</h1>
       <Banner />
+      <section className="about-me">
+        <About data={AboutData} />
+      </section>
+      <section className="prestation">
+        <Prestation data={PrestationData} />
+      </section>
+      <section className="seo-content">
+        <Seocontent data={SeoContentData} />
+      </section>
     </div>
   );
 }

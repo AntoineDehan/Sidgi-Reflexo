@@ -1,0 +1,17 @@
+@use "../../main.scss" as *;
+
+.main-conteneur {
+  h1,
+  h2 {
+    font-family: "Dancing Script";
+  }
+  a,
+  p,
+  h3 {
+    font-family: "Nunito";
+  }
+  section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

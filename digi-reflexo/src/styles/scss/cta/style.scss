@@ -1,0 +1,13 @@
+@use "../../main.scss" as *;
+
+.cta-conteneur {
+  button {
+    background-color: $secondary-color;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 9px 9px 9px 9px;
+  }
+}

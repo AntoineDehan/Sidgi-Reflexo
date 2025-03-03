@@ -1,0 +1,40 @@
+.prestation-conteneur {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.presta-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.presta-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.presta-card:nth-child(odd) {
+  justify-self: start;
+}
+
+.presta-card:nth-child(even) {
+  justify-self: end;
+  flex-direction: row-reverse;
+}
+
+.presta-card-contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.presta-card-prix {
+  font-weight: bold;
+  margin-top: 5px;
+}
