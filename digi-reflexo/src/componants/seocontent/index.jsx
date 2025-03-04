@@ -1,7 +1,7 @@
 function Seocontent({ data }) {
   return (
     <div className="seo-conteneur">
-      <h3>{data.titre}</h3>
+      <h2>{data.titre}</h2>
       <p>{data.content}</p>
     </div>
   );

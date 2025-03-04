@@ -1,3 +1,24 @@
-
+.about-conteneur {
+  height: 500px;
+  width: 100%;
+}
+.about-conteneur .test {
+  position: relative;
+}
+.about-conteneur .test .about-image {
+  height: 425px;
+  width: 425px;
+}
+.about-conteneur .test .about-content {
+  position: absolute;
+  bottom: 0px;
+  left: 430px;
+}
+.about-conteneur .test .about-content h2 {
+  margin-bottom: 0;
+}
+.about-conteneur .test .about-content p {
+  margin: 0 0 0 -25px;
+}
 
 /*# sourceMappingURL=style.css.map */

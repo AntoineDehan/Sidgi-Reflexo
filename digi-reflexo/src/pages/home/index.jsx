@@ -17,6 +17,7 @@ function Home() {
         <About data={AboutData} />
       </section>
       <section className="prestation">
+        <h1>Mes préstations</h1>
         <Prestation data={PrestationData} />
       </section>
       <section className="seo-content">

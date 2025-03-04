@@ -2,21 +2,21 @@
   {
     "id": 1,
     "titre": "Réfléxologie Plantaire",
-    "content": "blabla",
+    "content": "Détente et équilibre par le massage des pieds",
     "prix": "20€",
     "image": "https://fastly.picsum.photos/id/857/200/200.jpg?hmac=HAtw8t8dR2kLoj5Y-AUwqz3BWYUX9bLv16LyNN8dEBY"
   },
   {
     "id": 2,
     "titre": "Réfléxologie Faciale",
-    "content": "blabla",
+    "content": "Stimulation du visage pour apaiser le corps",
     "prix": "20€",
     "image": "https://fastly.picsum.photos/id/857/200/200.jpg?hmac=HAtw8t8dR2kLoj5Y-AUwqz3BWYUX9bLv16LyNN8dEBY"
   },
   {
     "id": 3,
     "titre": "Réfléxologie Palmaire",
-    "content": "blabla",
+    "content": "Relaxation et bien-être via les mains",
     "prix": "20€",
     "image": "https://fastly.picsum.photos/id/857/200/200.jpg?hmac=HAtw8t8dR2kLoj5Y-AUwqz3BWYUX9bLv16LyNN8dEBY"
   }

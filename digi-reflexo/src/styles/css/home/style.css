@@ -1,15 +1,18 @@
 .main-conteneur h1,
 .main-conteneur h2 {
   font-family: "Dancing Script";
+  font-size: 3.25rem;
 }
 .main-conteneur a,
 .main-conteneur p,
 .main-conteneur h3 {
   font-family: "Nunito";
+  font-size: 1.1rem;
 }
 .main-conteneur section {
   padding-left: 10%;
   padding-right: 10%;
+  background-color: #b2a4d5;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+@use "../../main.scss" as *;
+
+.about-conteneur {
+  height: 500px;
+  width: 100%;
+  .test {
+    position: relative;
+    .about-image {
+      height: 425px;
+      width: 425px;
+    }
+    .about-content {
+      position: absolute;
+      bottom: 0px;
+      left: 430px;
+      h2 {
+        margin-bottom: 0;
+      }
+      p {
+        margin: 0 0 0 -25px;
+      }
+    }
+  }
+}

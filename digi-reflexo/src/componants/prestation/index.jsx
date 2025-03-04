@@ -12,8 +12,8 @@ function Prestation({ data }) {
             <img src={image} alt={titre} />
             <div className="presta-card-contenu">
               <h3 className="presta-card-title">{titre}</h3>
-              <p className="cv-card-content">{content}</p>
-              <p className="presta-card-prix">{prix}</p>
+              <p className="presta-card-content">{content}</p>
+              <p className="presta-card-prix">{prix}/séance</p>
               <Cta />
             </div>
           </div>

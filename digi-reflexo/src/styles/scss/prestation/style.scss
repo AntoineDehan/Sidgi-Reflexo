@@ -1,40 +1,59 @@
+@use "../../main.scss" as *;
+
 .prestation-conteneur {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   align-items: center;
   padding: 2rem;
-}
+  .presta-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 600px;
+    // max-width: 500px;
+    background-color: $tertiary-color;
+    border-radius: 15px;
+    border: solid 2px $secondary-color;
+    height: 200px;
+  }
+  .presta-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
 
-.presta-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  max-width: 500px;
-}
+  .presta-card:nth-child(odd) {
+    justify-self: start;
+  }
 
-.presta-card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.presta-card:nth-child(odd) {
-  justify-self: start;
-}
-
-.presta-card:nth-child(even) {
-  justify-self: end;
-  flex-direction: row-reverse;
-}
-
-.presta-card-contenu {
-  display: flex;
-  flex-direction: column;
-}
-
-.presta-card-prix {
-  font-weight: bold;
-  margin-top: 5px;
+  .presta-card:nth-child(even) {
+    justify-self: end;
+    flex-direction: row-reverse;
+    .presta-card-contenu {
+      margin-left: 15px;
+    }
+  }
+  .presta-card-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    h3 {
+      margin: 3px 0 5px 0;
+      font-size: 1.25rem;
+    }
+    .presta-card-content {
+      margin: -15px 0 5px 0;
+    }
+    .presta-card-prix {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .cta-conteneur {
+      align-self: center;
+    }
+  }
 }
