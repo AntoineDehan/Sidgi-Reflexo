@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b2a4d5;
+  background-color: #a8b5a2;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -14,9 +14,10 @@ header nav {
   gap: 10px;
 }
 header nav a {
-  font-size: 1.35rem;
+  font-size: 1.55rem;
   text-decoration: none;
-  color: #faf8f3;
+  font-weight: bold;
+  color: #eeeadf;
 }
 
 /*# sourceMappingURL=style.css.map */

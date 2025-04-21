@@ -3,7 +3,8 @@
 .main-conteneur {
   h1,
   h2 {
-    font-family: "Dancing Script";
+    // font-family: "Playfair Display", serif;
+    font-family: "EB Garamond", serif;
     font-size: 3.25rem;
   }
   a,
@@ -13,8 +14,17 @@
     font-size: 1.1rem;
   }
   section {
+    // padding-left: 10%;
+    // padding-right: 10%;
+    background-color: $bg-color;
+  }
+
+  .test {
+    background-color: $secondary-bg-color;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: $main-color;
+    .prestation {
+      background-color: $bg-color;
+    }
   }
 }

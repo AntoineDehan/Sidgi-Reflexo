@@ -1,6 +1,6 @@
 .main-conteneur h1,
 .main-conteneur h2 {
-  font-family: "Dancing Script";
+  font-family: "EB Garamond", serif;
   font-size: 3.25rem;
 }
 .main-conteneur a,
@@ -10,9 +10,15 @@
   font-size: 1.1rem;
 }
 .main-conteneur section {
+  background-color: #f5f3ee;
+}
+.main-conteneur .test {
+  background-color: #a8b5a2;
   padding-left: 10%;
   padding-right: 10%;
-  background-color: #b2a4d5;
+}
+.main-conteneur .test .prestation {
+  background-color: #f5f3ee;
 }
 
 /*# sourceMappingURL=style.css.map */

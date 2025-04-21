@@ -1,35 +1,26 @@
 .prestation-conteneur {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
   padding: 2rem;
 }
 .prestation-conteneur .presta-card {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  width: 600px;
-  background-color: #eeeadf;
+  width: 40%;
+  background-color: #a8b5a2;
   border-radius: 15px;
-  border: solid 2px #bbcfb6;
-  height: 200px;
+  border: solid 2px #e7d8c9;
+  height: 300px;
 }
 .prestation-conteneur .presta-card img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 14px;
-}
-.prestation-conteneur .presta-card:nth-child(odd) {
-  justify-self: start;
-}
-.prestation-conteneur .presta-card:nth-child(even) {
-  justify-self: end;
-  flex-direction: row-reverse;
-}
-.prestation-conteneur .presta-card:nth-child(even) .presta-card-contenu {
-  margin-left: 15px;
 }
 .prestation-conteneur .presta-card-contenu {
   display: flex;
@@ -39,8 +30,9 @@
   height: 100%;
 }
 .prestation-conteneur .presta-card-contenu h3 {
+  font-family: "EB Garamond", serif;
   margin: 3px 0 5px 0;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 .prestation-conteneur .presta-card-contenu .presta-card-content {
   margin: -15px 0 5px 0;

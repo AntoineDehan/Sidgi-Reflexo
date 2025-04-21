@@ -1,21 +1,22 @@
 @use "../../main.scss" as *;
 
 .prestation-conteneur {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
   padding: 2rem;
   .presta-card {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    width: 600px;
+    width: 40%;
     // max-width: 500px;
-    background-color: $tertiary-color;
+    background-color: $secondary-bg-color;
     border-radius: 15px;
-    border: solid 2px $secondary-color;
-    height: 200px;
+    border: solid 2px $btn-color;
+    height: 300px;
   }
   .presta-card img {
     width: 200px;
@@ -24,17 +25,6 @@
     border-radius: 14px;
   }
 
-  .presta-card:nth-child(odd) {
-    justify-self: start;
-  }
-
-  .presta-card:nth-child(even) {
-    justify-self: end;
-    flex-direction: row-reverse;
-    .presta-card-contenu {
-      margin-left: 15px;
-    }
-  }
   .presta-card-contenu {
     display: flex;
     flex-direction: column;
@@ -42,8 +32,9 @@
     justify-content: space-around;
     height: 100%;
     h3 {
+      font-family: "EB Garamond", serif;
       margin: 3px 0 5px 0;
-      font-size: 1.25rem;
+      font-size: 1.75rem;
     }
     .presta-card-content {
       margin: -15px 0 5px 0;

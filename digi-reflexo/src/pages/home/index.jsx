@@ -16,10 +16,12 @@ function Home() {
       <section className="about-me">
         <About data={AboutData} />
       </section>
-      <section className="prestation">
-        <h1>Mes préstations</h1>
-        <Prestation data={PrestationData} />
-      </section>
+      <div className="test">
+        <section className="prestation">
+          <h1>Mes préstations</h1>
+          <Prestation data={PrestationData} />
+        </section>
+      </div>
       <section className="seo-content">
         <Seocontent data={SeoContentData} />
       </section>

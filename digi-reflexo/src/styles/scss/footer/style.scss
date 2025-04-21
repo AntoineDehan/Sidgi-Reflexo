@@ -5,14 +5,14 @@
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", serif;
-  background-color: $main-color;
-  color: $tertiary-color;
+  background-color: $secondary-bg-color;
+  color: $main-text-color;
   .footer-title {
     font-size: 2.5rem;
     text-align: center;
   }
   a {
-    color: $tertiary-color;
+    color: $main-text-color;
   }
   .contact-form {
     display: flex;
@@ -24,9 +24,9 @@
       height: 30px;
       align-self: center;
       border-radius: 10px;
-      border: $secondary-color solid 2px;
-      color: $secondary-color;
-      background-color: $tertiary-color;
+      border: $bg-color solid 2px;
+      color: $secondary-bg-color;
+      background-color: $main-text-color;
     }
     label {
       font-size: 1.25rem;
@@ -36,7 +36,7 @@
     .input {
       width: 350px;
       border-radius: 8px;
-      border: $secondary-color solid 2px;
+      border: $bg-color solid 2px;
     }
     .email-input {
       height: 25px;

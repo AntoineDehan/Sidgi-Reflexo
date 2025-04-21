@@ -1,10 +1,9 @@
 @use "../../main.scss" as *;
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $main-color;
+  background-color: $secondary-bg-color;
   padding-left: 15px;
   padding-right: 15px;
   .logo {
@@ -14,9 +13,10 @@ header {
     display: flex;
     gap: 10px;
     a {
-      font-size: 1.35rem;
+      font-size: 1.55rem;
       text-decoration: none;
-      color: #faf8f3;
+      font-weight: bold;
+      color: $main-text-color;
     }
   }
 }
