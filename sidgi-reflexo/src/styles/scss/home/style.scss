@@ -19,6 +19,11 @@
     background-color: $bg-color;
   }
 
+  .about-me {
+    display: flex;
+    justify-content: center;
+  }
+
   .test {
     background-color: $secondary-bg-color;
     padding-left: 10%;

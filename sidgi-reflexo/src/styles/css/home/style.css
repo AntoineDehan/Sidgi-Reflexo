@@ -12,6 +12,10 @@
 .main-conteneur section {
   background-color: #f5f3ee;
 }
+.main-conteneur .about-me {
+  display: flex;
+  justify-content: center;
+}
 .main-conteneur .test {
   background-color: #a8b5a2;
   padding-left: 10%;

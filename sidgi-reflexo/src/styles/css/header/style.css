@@ -5,9 +5,12 @@ header {
   background-color: #a8b5a2;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 header .logo {
-  width: 15%;
+  height: 75px;
+  margin-left: 20px;
 }
 header nav {
   display: flex;

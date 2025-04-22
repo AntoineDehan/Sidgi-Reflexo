@@ -1,24 +1,26 @@
 @use "../../main.scss" as *;
 
 .about-conteneur {
-  height: 500px;
-  width: 100%;
-  .test {
-    position: relative;
-    .about-image {
-      height: 425px;
-      width: 425px;
+  display: flex;
+  padding: 200px 35px 50px 35px;
+  justify-content: center;
+  align-items: center;
+  .about-image {
+    height: 400px;
+    width: 420px;
+    border-radius: 50px;
+  }
+  .about-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      width: 80%;
+      text-align: center;
     }
-    .about-content {
-      position: absolute;
-      bottom: 0px;
-      left: 430px;
-      h2 {
-        margin-bottom: 0;
-      }
-      p {
-        margin: 0 0 0 -25px;
-      }
+    h2 {
+      margin: 0;
     }
   }
 }
