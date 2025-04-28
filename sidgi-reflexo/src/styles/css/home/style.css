@@ -3,6 +3,10 @@
   font-family: "EB Garamond", serif;
   font-size: 3.25rem;
 }
+.main-conteneur .divider {
+  background-color: #a8b5a2;
+  height: 50px;
+}
 .main-conteneur a,
 .main-conteneur p,
 .main-conteneur h3 {
@@ -16,13 +20,20 @@
   display: flex;
   justify-content: center;
 }
-.main-conteneur .test {
-  background-color: #a8b5a2;
-  padding-left: 10%;
-  padding-right: 10%;
+.main-conteneur .bold-text {
+  font-weight: bold;
 }
-.main-conteneur .test .prestation {
+.main-conteneur .conteneur {
+  background-color: #a8b5a2;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.main-conteneur .conteneur .prestation {
   background-color: #f5f3ee;
+}
+.main-conteneur .conteneur .prestation h1 {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

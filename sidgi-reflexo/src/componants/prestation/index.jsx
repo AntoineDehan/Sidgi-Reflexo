@@ -6,7 +6,7 @@ function Prestation({ data }) {
   return (
     <div className="prestation-conteneur">
       {data?.map((presta) => {
-        const { titre, content, prix, id, image } = presta;
+        const { titre, content, prix, id, image, url } = presta;
         return (
           <div className="presta-card" key={id}>
             <img src={image} alt={titre} />
@@ -14,7 +14,7 @@ function Prestation({ data }) {
               <h3 className="presta-card-title">{titre}</h3>
               <p className="presta-card-content">{content}</p>
               <p className="presta-card-prix">{prix}/séance</p>
-              <Cta />
+              <Cta url={url} />
             </div>
           </div>
         );

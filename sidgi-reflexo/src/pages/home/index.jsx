@@ -6,6 +6,7 @@ import Seocontent from "../../componants/seocontent";
 import AboutData from "../../data/about/dehanjenny.json";
 import PrestationData from "../../data/offres/offres.json";
 import SeoContentData from "../../data/seocontent/content.json";
+import Localisation from "../../componants/localisation";
 
 import "../../styles/css/home/style.css";
 
@@ -16,14 +17,20 @@ function Home() {
       <section className="about-me">
         <About data={AboutData} />
       </section>
-      <div className="test">
+      <div className="divider"></div>
+      <div className="conteneur">
         <section className="prestation">
           <h1>Mes préstations</h1>
           <Prestation data={PrestationData} />
         </section>
       </div>
+      <div className="divider"></div>
       <section className="seo-content">
         <Seocontent data={SeoContentData} />
+      </section>
+      <div className="divider"></div>
+      <section className="local-seo">
+        <Localisation />
       </section>
     </div>
   );

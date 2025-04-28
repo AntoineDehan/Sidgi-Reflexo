@@ -1,0 +1,22 @@
+.localisation-conteneur {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.localisation-conteneur .localisation-map {
+  border: 5px solid #e7d8c9;
+}
+.localisation-conteneur .localisation-map iframe {
+  height: 100%;
+}
+.localisation-conteneur .localisation-content {
+  max-width: 750px;
+}
+.localisation-conteneur .localisation-content h2 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

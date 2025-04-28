@@ -1,0 +1,22 @@
+@use "../../main.scss" as *;
+
+.localisation-conteneur {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  .localisation-map {
+    border: 5px solid $btn-color;
+    iframe {
+      height: 100%;
+    }
+  }
+  .localisation-content {
+    max-width: 750px;
+    h2 {
+      margin-top: 0;
+      font-size: 2.2rem;
+    }
+  }
+}

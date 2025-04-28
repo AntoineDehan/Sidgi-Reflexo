@@ -7,6 +7,10 @@
     font-family: "EB Garamond", serif;
     font-size: 3.25rem;
   }
+  .divider {
+    background-color: $secondary-bg-color;
+    height: 50px;
+  }
   a,
   p,
   h3 {
@@ -24,12 +28,20 @@
     justify-content: center;
   }
 
-  .test {
+  .bold-text {
+    font-weight: bold;
+  }
+
+  .conteneur {
     background-color: $secondary-bg-color;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
     .prestation {
       background-color: $bg-color;
+      h1 {
+        margin-top: 0;
+        padding-top: 0;
+      }
     }
   }
 }

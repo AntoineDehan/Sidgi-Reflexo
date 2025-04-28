@@ -7,7 +7,11 @@
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 9px 9px 9px 9px;
+    &:hover {
+      cursor: pointer;
+      color: rgba(221, 170, 221, 0.986);
+    }
   }
 }
