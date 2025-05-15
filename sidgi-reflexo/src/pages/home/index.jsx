@@ -13,7 +13,6 @@ import "../../styles/css/home/style.css";
 function Home() {
   return (
     <div className="main-conteneur">
-      <Banner />
       <section className="about-me">
         <About data={AboutData} />
       </section>

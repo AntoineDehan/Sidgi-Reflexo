@@ -1,24 +1,40 @@
+.main-conteneur {
+  height: 100%;
+}
 .main-conteneur h1,
 .main-conteneur h2 {
   font-family: "EB Garamond", serif;
-  font-size: 3.25rem;
-}
-.main-conteneur .divider {
-  background-color: #a8b5a2;
-  height: 50px;
+  font-size: 3.3rem;
+  color: #4f6149;
 }
 .main-conteneur a,
 .main-conteneur p,
 .main-conteneur h3 {
   font-family: "Nunito";
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: #4f6149;
+}
+.main-conteneur .divider {
+  background-color: #a8b5a2;
+  height: 50px;
+}
+.main-conteneur .small {
+  height: 25px;
 }
 .main-conteneur section {
-  background-color: #f5f3ee;
+  background-color: rgba(245, 243, 238, 0.9647058824);
+  height: 80vh;
 }
 .main-conteneur .about-me {
   display: flex;
   justify-content: center;
+  height: 60vh;
+}
+.main-conteneur .prestation {
+  height: 50vh;
+}
+.main-conteneur .local-seo {
+  height: 40vh;
 }
 .main-conteneur .bold-text {
   font-weight: bold;
@@ -29,7 +45,10 @@
   padding-right: 50px;
 }
 .main-conteneur .conteneur .prestation {
-  background-color: #f5f3ee;
+  background-color: rgba(245, 243, 238, 0.9647058824);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main-conteneur .conteneur .prestation h1 {
   margin-top: 0;

@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer-conteneur">
       <div className="form-contact-conteneur">
         <h2 id="contact" className="footer-title">
-          Envie d’une séance ?<br></br> Contactez-moi
+          Besoin de me contacter ?
         </h2>
         <form method="POST" className="contact-form">
           <label htmlFor="email">Email</label>

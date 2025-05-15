@@ -6,12 +6,14 @@
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    // border-radius: 20px;
     font-size: 1.5rem;
     padding: 9px 9px 9px 9px;
+    transition: all 0.3s ease;
     &:hover {
       cursor: pointer;
-      color: rgba(221, 170, 221, 0.986);
+      background-color: $bg-color;
+      color: $btn-color;
     }
   }
 }

@@ -3,17 +3,16 @@ import "../../styles/css/about/style.css";
 function About({ data }) {
   return (
     <div className="about-conteneur">
-      <img src={data.image} alt={data.titre} className="about-image" />
+      <div className="about-image">
+        <img src={data.image} alt={data.titre} className="about-image" />
+      </div>
       <div className="about-content">
         <h2>{data.titre}</h2>
-        <p>
+        <div>
           {data.content.split("\n").map((line, index) => (
-            <span key={index}>
-              {line}
-              <br />
-            </span>
+            <p key={index}>{line}</p>
           ))}
-        </p>
+        </div>
       </div>
     </div>
   );

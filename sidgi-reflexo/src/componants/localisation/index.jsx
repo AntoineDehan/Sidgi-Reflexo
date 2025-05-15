@@ -39,9 +39,10 @@ function Localisation() {
         </div>
         <div className="content-description" itemProp="description">
           <p>
-            Pour accèder a votre futur séance de réfléxologie à Val de Virvée
-            vous pouvez vous garer facilement sur le parking de l'église. Je me
-            situe au bout du chemin.
+            Pour accèder a votre futur séance de réflexologie à Val de Virvée
+            vous pouvez vous garer facilement sur le parking de l'église.
+            Rentrez dans la cours gravillonnée et je me situe au bout du chemin,
+            au niveau du portail en bois.
           </p>
         </div>
       </div>

@@ -13,8 +13,10 @@ function Prestation({ data }) {
             <div className="presta-card-contenu">
               <h3 className="presta-card-title">{titre}</h3>
               <p className="presta-card-content">{content}</p>
-              <p className="presta-card-prix">{prix}/séance</p>
-              <Cta url={url} />
+              <div className="presta-card-conteneur">
+                <p className="presta-card-prix">{prix}/séance</p>
+                <Cta url={url} />
+              </div>
             </div>
           </div>
         );

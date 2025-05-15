@@ -3,13 +3,14 @@
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 5px;
   font-size: 1.5rem;
   padding: 9px 9px 9px 9px;
+  transition: all 0.3s ease;
 }
 .cta-conteneur button:hover {
   cursor: pointer;
-  color: rgba(221, 170, 221, 0.986);
+  background-color: rgba(245, 243, 238, 0.9647058824);
+  color: #e7d8c9;
 }
 
 /*# sourceMappingURL=style.css.map */
