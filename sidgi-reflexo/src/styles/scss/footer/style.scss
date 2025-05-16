@@ -7,6 +7,18 @@
   font-family: "Roboto", serif;
   background-color: $secondary-bg-color;
   color: $main-text-color;
+  .modal-conteneur {
+    margin-top: 20px;
+    .modal-btn {
+      border: none;
+      background: none;
+      color: $main-text-color;
+      text-decoration: underline;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
   .footer-title {
     font-size: 2.4rem;
     text-align: center;

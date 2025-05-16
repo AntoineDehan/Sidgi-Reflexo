@@ -6,6 +6,18 @@
   background-color: #a8b5a2;
   color: #eeeadf;
 }
+.footer-conteneur .modal-conteneur {
+  margin-top: 20px;
+}
+.footer-conteneur .modal-conteneur .modal-btn {
+  border: none;
+  background: none;
+  color: #eeeadf;
+  text-decoration: underline;
+}
+.footer-conteneur .modal-conteneur .modal-btn:hover {
+  cursor: pointer;
+}
 .footer-conteneur .footer-title {
   font-size: 2.4rem;
   text-align: center;
@@ -23,7 +35,7 @@
   height: 30px;
   align-self: center;
   border-radius: 10px;
-  border: #f5f3ee solid 2px;
+  border: rgba(245, 243, 238, 0.9647058824) solid 2px;
   color: #a8b5a2;
   background-color: #eeeadf;
 }
@@ -35,7 +47,7 @@
 .footer-conteneur .contact-form .input {
   width: 350px;
   border-radius: 8px;
-  border: #f5f3ee solid 2px;
+  border: rgba(245, 243, 238, 0.9647058824) solid 2px;
 }
 .footer-conteneur .contact-form .email-input {
   height: 25px;

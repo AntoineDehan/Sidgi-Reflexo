@@ -13,18 +13,18 @@ import "../../styles/css/home/style.css";
 function Home() {
   return (
     <div className="main-conteneur">
-      <section className="about-me">
+      <section className="about-me" id="accueil">
         <About data={AboutData} />
       </section>
       <div className="divider"></div>
-      <div className="conteneur">
+      <div className="conteneur" id="offres">
         <section className="prestation">
           <h1>Mes préstations</h1>
           <Prestation data={PrestationData} />
         </section>
       </div>
       <div className="divider"></div>
-      <section className="seo-content">
+      <section className="seo-content" id="reflexologie">
         <Seocontent data={SeoContentData} />
       </section>
       <div className="divider"></div>

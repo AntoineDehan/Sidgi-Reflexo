@@ -11,9 +11,9 @@ function Header() {
         alt="Logo sobre de l'entreprise Digi-Réflexo"
       />
       <nav>
-        <Link>Accueil</Link>
-        <Link>Offres</Link>
-        <Link>La Rélexologie</Link>
+        <a href="#accueil">Accueil</a>
+        <a href="#offres">Offres</a>
+        <a href="#reflexologie">La Rélexologie</a>
       </nav>
     </header>
   );
