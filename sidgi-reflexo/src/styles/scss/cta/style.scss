@@ -8,12 +8,48 @@
     border: none;
     // border-radius: 20px;
     font-size: 1.5rem;
-    padding: 9px 9px 9px 9px;
+    padding: 9px;
     transition: all 0.3s ease;
     &:hover {
       cursor: pointer;
       background-color: $bg-color;
       color: $btn-color;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .cta-conteneur {
+    button {
+      font-size: 1.3rem;
+      padding: 7.5px;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .cta-conteneur {
+    button {
+      font-size: 1.1rem;
+      padding: 7px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .cta-conteneur {
+    button {
+      font-size: 1rem;
+      padding: 6.5px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-conteneur {
+    button {
+      font-size: 0.95rem;
+      padding: 6px;
     }
   }
 }

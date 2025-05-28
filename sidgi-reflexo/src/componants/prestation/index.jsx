@@ -1,6 +1,6 @@
 import Cta from "../cta";
 
-import "../../styles/css/prestation/style.css";
+import "../../styles/scss/prestation/style.scss";
 
 function Prestation({ data }) {
   return (

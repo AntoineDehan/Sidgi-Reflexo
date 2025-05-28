@@ -1,4 +1,4 @@
-import "../../styles/css/cta/style.css";
+import "../../styles/scss/cta/style.scss";
 
 function Cta({ Titre = "Réservation", url }) {
   return (
