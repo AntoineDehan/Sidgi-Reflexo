@@ -1,22 +1,64 @@
 @use "../../main.scss" as *;
 
 .localisation-conteneur {
-  padding-top: 50px;
-  padding-bottom: 50px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 10%;
   .localisation-map {
     border: 5px solid $btn-color;
+    height: 400px;
+    width: 400px;
     iframe {
       height: 100%;
+      width: 100%;
     }
   }
   .localisation-content {
-    max-width: 750px;
+    max-width: 800px;
+    width: 50%;
     h2 {
       margin-top: 0;
       font-size: 2.2rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .localisation-conteneur {
+    .localisation-map {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .localisation-conteneur {
+    flex-direction: column;
+    justify-content: space-between;
+    .localisation-map {
+      border: 4px solid $btn-color;
+      height: 100%;
+      width: 80%;
+      margin-top: 10px;
+    }
+    .localisation-content {
+      max-width: 1080px;
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .localisation-conteneur {
+    .localisation-content {
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   }
 }

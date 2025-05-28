@@ -30,20 +30,20 @@
   // Sections
   section {
     background-color: $bg-color;
-    height: 80vh;
+    height: 50rem;
   }
   .about-me {
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 50rem;
   }
   .prestation {
-    height: 40vh;
+    height: 30rem;
     display: flex;
     justify-content: center;
   }
   .local-seo {
-    height: 40vh;
+    height: 35rem;
   }
 
   .bold-text {
@@ -79,13 +79,13 @@
       font-size: 1.1rem;
     }
     .prestation {
-      height: 30vh;
+      height: 35rem;
     }
     .about-me {
-      height: 35vh;
+      height: 40rem;
     }
     .seo-content {
-      height: 35vh;
+      height: 45rem;
     }
   }
 }
@@ -102,8 +102,11 @@
       font-size: 1rem;
     }
     .about-me {
-      height: 30vh;
+      height: 30rem;
       align-content: center;
+    }
+    .prestation {
+      height: 40rem;
     }
   }
 }
@@ -120,11 +123,14 @@
     h3 {
       font-size: 0.9rem;
     }
+    .prestation {
+      height: 30rem;
+    }
     .about-me {
-      height: 26vh;
+      height: 30rem;
     }
     .seo-content {
-      height: 40vh;
+      height: 40rem;
     }
     .divider {
       height: 25px;
@@ -139,13 +145,16 @@
 @media (max-width: 480px) {
   .main-conteneur {
     .about-me {
-      height: 32vh;
+      height: 35rem;
     }
     .prestation {
-      height: 25vh;
+      height: 28rem;
     }
     .seo-content {
-      height: 45vh;
+      height: 48rem;
+    }
+    .local-seo {
+      height: 36rem;
     }
   }
 }

@@ -1,4 +1,4 @@
-import "../../styles/css/localisation/style.css";
+import "../../styles/scss/localisation/style.scss";
 
 function Localisation() {
   return (
@@ -16,7 +16,7 @@ function Localisation() {
       </div>
       <div className="localisation-content">
         <div className="content-info" itemProp="name">
-          <h2>Sidgi Réflexo - Réflexologue Saint-André</h2>
+          <h2>Sidgi Réflexo - Réflexologue Saint-André-de-Cubzac</h2>
           <p
             itemProp="address"
             itemscope
