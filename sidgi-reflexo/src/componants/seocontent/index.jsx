@@ -1,4 +1,4 @@
-import "../../styles/css/content/style.css";
+import "../../styles/scss/content/style.scss";
 
 function Seocontent({ data }) {
   return (
@@ -12,7 +12,7 @@ function Seocontent({ data }) {
         </div>
       </div>
       <div className="seo-image">
-        <img src={data.image} alt="" />
+        <img src={data.image} alt="Image d'illustration de réflexologie" />
       </div>
     </div>
   );
