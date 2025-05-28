@@ -16,7 +16,7 @@ function Localisation() {
       </div>
       <div className="localisation-content">
         <div className="content-info" itemProp="name">
-          <h2>Sidgi Réflexo - Réflexologue</h2>
+          <h2>Sidgi Réflexo - Réflexologue Saint-André</h2>
           <p
             itemProp="address"
             itemscope

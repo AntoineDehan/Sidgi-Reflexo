@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-import "../../styles/css/header/style.css";
+import "../../styles/scss/header/style.scss";
 
 function Header() {
   return (
     <header>
       <img
         className="logo"
-        src="/src/assets/logo_placeholder.webp"
+        src="/src/assets/logo_header.webp"
         alt="Logo sobre de l'entreprise Digi-Réflexo"
       />
       <nav>

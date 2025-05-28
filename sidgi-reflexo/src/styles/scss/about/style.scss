@@ -17,8 +17,8 @@
     background-color: $secondary-bg-color;
     img {
       width: 55%;
-      height: 75%;
-      // border-radius: 20px;
+      height: 95%;
+      object-fit: contain;
     }
   }
   .about-content {
@@ -30,7 +30,6 @@
     align-items: center;
     box-sizing: border-box;
     margin-right: 5%;
-    // margin-bottom: 70px;
     p {
       text-align: justify;
       margin: 2px;
@@ -39,6 +38,45 @@
     h2 {
       margin: 0 0 70px 0;
       color: #5f7457;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .about-conteneur {
+    .about-image {
+      img {
+        width: 70%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .about-conteneur {
+    flex-direction: column;
+    align-items: center;
+
+    .about-image {
+      display: none;
+    }
+    .about-content {
+      width: 90%;
+      margin-right: 0;
+      justify-content: center;
+      h2 {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .about-content {
+    width: 100%;
+    h2 {
+      text-align: center;
     }
   }
 }

@@ -8,7 +8,7 @@ import PrestationData from "../../data/offres/offres.json";
 import SeoContentData from "../../data/seocontent/content.json";
 import Localisation from "../../componants/localisation";
 
-import "../../styles/css/home/style.css";
+import "../../styles/scss/home/style.scss";
 
 function Home() {
   return (

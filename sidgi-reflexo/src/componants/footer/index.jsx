@@ -62,7 +62,7 @@ function Footer() {
             <br />
             Adresse : 17 Bis Rue d'Artiguelongue 33240 Val de Virvée
             <br />
-            SIRET : [Numéro de SIRET]
+            SIRET : 87963846800022
             <br />
             Téléphone : 07 85 84 11 51
             <br />

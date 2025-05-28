@@ -26,3 +26,30 @@ header {
     }
   }
 }
+
+@media (max-width: 720px) {
+  header {
+    .logo {
+      height: 50px;
+    }
+    nav {
+      a {
+        font-size: 1.45rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    .logo {
+      height: 30px;
+      margin-left: 5px;
+    }
+    nav {
+      a {
+        font-size: 1.15rem;
+      }
+    }
+  }
+}

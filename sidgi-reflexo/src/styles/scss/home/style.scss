@@ -64,3 +64,63 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .main-conteneur {
+    h1,
+    h2 {
+      font-size: 3.2rem;
+    }
+    a,
+    p,
+    h3 {
+      font-size: 1.1rem;
+    }
+    .prestation {
+      height: 40vh;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .main-conteneur {
+    h1,
+    h2 {
+      font-size: 2.95rem;
+    }
+    a,
+    p,
+    h3 {
+      font-size: 1rem;
+    }
+    .about-me {
+      height: 30vh;
+      align-content: center;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .main-conteneur {
+    h1,
+    h2 {
+      font-size: 2.7rem;
+    }
+    a,
+    p,
+    h3 {
+      font-size: 0.9rem;
+    }
+    .about-me {
+      height: 35vh;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main-conteneur {
+    .about-me {
+      height: 36vh;
+    }
+  }
+}

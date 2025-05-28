@@ -4,15 +4,15 @@
     "titre": "Réflexologie Plantaire",
     "content": "Un moment d’équilibre et de lâcher prise pour tout le corps à travers la plante des pieds.",
     "prix": "50€",
-    "image": "https://fastly.picsum.photos/id/31/3264/4912.jpg?hmac=lfmmWE3h_aXmRwDDZ7pZb6p0Foq6u86k_PpaFMnq0r8",
-    "url": "https://calendly.com/sidgi-reflexologie/30min"
+    "image": "./src/assets/reflexo_plantaire.jpg",
+    "url": "https://calendly.com/sidgi-reflexologie/seance-de-reflexologie-plantaire-clone-1"
   },
   {
     "id": 2,
     "titre": "Réflexologie Palmaire",
     "content": "Relâchez les tensions physiques et mentales grâce à la stimulation des mains.",
-    "prix": "35€",
-    "image": "https://fastly.picsum.photos/id/31/3264/4912.jpg?hmac=lfmmWE3h_aXmRwDDZ7pZb6p0Foq6u86k_PpaFMnq0r8",
-    "url": "https://calendly.com/sidgi-reflexologie/30min"
+    "prix": "Bientôt disponible! ",
+    "image": "./src/assets/reflexo_palmaire.jpg",
+    "url": "https://calendly.com/sidgi-reflexologie/seance-de-reflexologie-faciale-clone"
   }
 ]
