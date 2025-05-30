@@ -4,7 +4,6 @@
   height: 100%;
   h1,
   h2 {
-    // font-family: "Playfair Display", serif;
     font-family: "EB Garamond", serif;
     font-size: 3.3rem;
     color: $text-color;
@@ -145,16 +144,16 @@
 @media (max-width: 480px) {
   .main-conteneur {
     .about-me {
-      height: 35rem;
+      height: 40rem;
     }
     .prestation {
       height: 28rem;
     }
     .seo-content {
-      height: 48rem;
+      height: 50rem;
     }
     .local-seo {
-      height: 36rem;
+      height: 41rem;
     }
   }
 }

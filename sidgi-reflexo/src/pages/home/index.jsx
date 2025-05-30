@@ -8,6 +8,7 @@ import Modal from "../../componants/modal";
 
 import AboutData from "../../data/about/dehanjenny.json";
 import PrestationData from "../../data/offres/offres.json";
+import PopupData from "../../data/offres/offres_popup.json";
 import SeoContentData from "../../data/seocontent/content.json";
 import Localisation from "../../componants/localisation";
 
@@ -17,10 +18,13 @@ function Home() {
   const [isPopupOpen, setPopupOpen] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setPopupOpen(true);
-    }, 3000);
-    return () => clearTimeout(timer);
+    if (!sessionStorage.getItem("offer-popup-shown")) {
+      const timer = setTimeout(() => {
+        setPopupOpen(true);
+        sessionStorage.setItem("offer-popup-shown", "true");
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
   }, []);
   return (
     <div className="main-conteneur">
@@ -45,7 +49,10 @@ function Home() {
         </section>
       </div>
       <Modal isOpen={isPopupOpen} onClose={() => setPopupOpen(false)}>
-        <Prestation data={PrestationData}></Prestation>
+        <p className="modal-text">
+          Je propose une offre de lancement pour les débuts de Sidgi Réflexo!
+        </p>
+        <Prestation data={PopupData}></Prestation>
       </Modal>
     </div>
   );

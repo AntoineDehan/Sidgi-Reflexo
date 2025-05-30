@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Modal from "../modal";
 
-import "../../styles/css/footer/style.css";
+import "../../styles/scss/footer/style.scss";
 
 function Footer() {
   const [isMentionsOpen, setMentionsOpen] = useState(false);
@@ -21,6 +21,7 @@ function Footer() {
             name="email"
             className="email-input input"
             required
+            autoComplete="email"
           />
           <label htmlFor="message">Message</label>
           <textarea
@@ -28,6 +29,7 @@ function Footer() {
             name="message"
             className="message-input input"
             required
+            autoComplete="off"
           ></textarea>
           <button type="submit" className="submit-btn">
             Envoyer

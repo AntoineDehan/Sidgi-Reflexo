@@ -1,4 +1,4 @@
-import "../../styles/css/modal/style.css";
+import "../../styles/scss/modal/style.scss";
 
 function Modal({ isOpen, onClose, title, children }) {
   if (!isOpen) return null;

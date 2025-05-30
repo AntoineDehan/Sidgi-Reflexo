@@ -4,7 +4,7 @@
     "titre": "Réflexologie Plantaire",
     "content": "Un moment d’équilibre et de lâcher prise pour tout le corps à travers la plante des pieds.",
     "prix": "50€",
-    "image": "./src/assets/reflexo_plantaire.jpg",
+    "image": "/images/reflexo_plantaire.webp",
     "url": "https://calendly.com/sidgi-reflexologie/seance-de-reflexologie-plantaire-clone-1"
   },
   {
@@ -12,7 +12,7 @@
     "titre": "Réflexologie Palmaire",
     "content": "Relâchez les tensions physiques et mentales grâce à la stimulation des mains.",
     "prix": "Bientôt! ",
-    "image": "./src/assets/reflexo_palmaire.jpg",
+    "image": "/images/reflexo_palmaire.webp",
     "url": "https://calendly.com/sidgi-reflexologie/seance-de-reflexologie-faciale-clone"
   }
 ]

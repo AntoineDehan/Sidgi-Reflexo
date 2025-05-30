@@ -6,13 +6,13 @@
   align-items: center;
   font-family: "Roboto", serif;
   background-color: $secondary-bg-color;
-  color: $main-text-color;
+  color: $contraste-color;
   .modal-conteneur {
     margin-top: 20px;
     .modal-btn {
       border: none;
       background: none;
-      color: $main-text-color;
+      color: $contraste-color;
       text-decoration: underline;
       &:hover {
         cursor: pointer;
@@ -24,7 +24,7 @@
     text-align: center;
   }
   a {
-    color: $main-text-color;
+    color: $contraste-color;
   }
   .contact-form {
     display: flex;
@@ -37,13 +37,14 @@
       align-self: center;
       border-radius: 10px;
       border: $bg-color solid 2px;
-      color: $secondary-bg-color;
+      color: $contraste-color;
       background-color: $main-text-color;
     }
     label {
       font-size: 1.25rem;
       margin-bottom: 5px;
       margin-top: 15px;
+      color: $contraste-color;
     }
     .input {
       width: 350px;
@@ -55,6 +56,18 @@
     }
     .message-input {
       height: 200px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .footer-conteneur {
+    .contact-form {
+      justify-content: center;
+      align-items: center;
+      .input {
+        width: 250px;
+      }
     }
   }
 }

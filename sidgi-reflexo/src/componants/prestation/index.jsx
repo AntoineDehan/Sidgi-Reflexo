@@ -9,12 +9,15 @@ function Prestation({ data }) {
         const { titre, content, prix, id, image, url } = presta;
         return (
           <div className="presta-card" key={id}>
-            <img src={image} alt={titre} />
+            <img
+              src={image}
+              alt={`Image d'illustration libre de droit de ${titre}`}
+            />
             <div className="presta-card-contenu">
-              <h3 className="presta-card-title">{titre}</h3>
+              <h2 className="presta-card-title">{titre}</h2>
               <p className="presta-card-content">{content}</p>
               <div className="presta-card-conteneur">
-                <p className="presta-card-prix">{prix}/séance</p>
+                <h3 className="presta-card-prix">{prix}/séance</h3>
                 <Cta url={url} />
               </div>
             </div>

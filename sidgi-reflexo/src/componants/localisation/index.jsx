@@ -11,6 +11,7 @@ function Localisation() {
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
+          title="Localisation Google Maps de Sidgi Réflexo"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
@@ -19,8 +20,8 @@ function Localisation() {
           <h2>Sidgi Réflexo - Réflexologue Saint-André-de-Cubzac</h2>
           <p
             itemProp="address"
-            itemscope
-            itemtype="https://schema.org/PostalAddress"
+            itemScope
+            itemType="https://schema.org/PostalAddress"
           >
             <span className="bold-text">Adresse: </span>
             <span itemProp="streetAddress">17 Bis Rue d'Artiguelongue</span>
@@ -32,7 +33,7 @@ function Localisation() {
             <span itemProp="telephone">07 85 84 11 51</span>
           </p>
           <p>
-            <span class="bold-text">Horaires: </span>
+            <span className="bold-text">Horaires: </span>
             <span itemProp="openingHours" content="Mo-Fr 10:00-19:00"></span>
             lundi - vendredi 10h - 19h
           </p>

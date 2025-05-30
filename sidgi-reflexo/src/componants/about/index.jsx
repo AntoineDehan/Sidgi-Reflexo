@@ -4,7 +4,11 @@ function About({ data }) {
   return (
     <div className="about-conteneur">
       <div className="about-image">
-        <img src={data.image} alt={data.titre} className="about-image" />
+        <img
+          src={data.image}
+          alt="Photo personnelle présentant Jenny Dehan"
+          className="about-image"
+        />
       </div>
       <div className="about-content">
         <h2>{data.titre}</h2>
