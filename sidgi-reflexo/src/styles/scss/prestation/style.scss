@@ -3,10 +3,10 @@
 .prestation-conteneur {
   display: flex;
   flex-wrap: wrap;
-  // gap: 2rem;
   align-items: center;
   justify-content: space-around;
-  padding: 2rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
   .presta-card {
     display: flex;
     align-items: flex-start;

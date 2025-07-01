@@ -7,6 +7,8 @@
   height: 100%;
   width: 100%;
   gap: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   .localisation-map {
     border: 5px solid $btn-color;
     height: 400px;
@@ -55,19 +57,14 @@
 
 @media (max-width: 720px) {
   .localisation-conteneur {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 2%;
     .localisation-content {
       h2 {
         font-size: 1.5rem;
       }
     }
-  }
-}
-
-@media (max-width: 720px) {
-  .localisation-conteneur {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2%;
     .localisation-map {
       border: 4px solid $btn-color;
       height: 60%;
