@@ -1,41 +1,69 @@
 @use "../../main.scss" as *;
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $secondary-bg-color;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   position: sticky;
   top: 0;
   z-index: 100;
-  .logo {
-    height: 75px;
-    margin-left: 20px;
-  }
-  nav {
+  .navbar {
     display: flex;
-    gap: 20px;
-    a {
-      font-size: 1.7rem;
-      text-decoration: none;
-      font-weight: bold;
-      color: $main-text-color;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary-bg-color;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .logo {
+      height: 75px;
+      margin-left: 20px;
+    }
+    .navbar__nav {
+      .burger {
+        display: none;
+      }
+      .desktop {
+        display: flex;
+        gap: 20px;
+        a {
+          font-size: 1.7rem;
+          text-decoration: none;
+          font-weight: bold;
+          color: $main-text-color;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+      }
     }
   }
 }
 
 @media (max-width: 720px) {
   header {
-    .logo {
-      height: 50px;
-    }
-    nav {
-      a {
-        font-size: 1.45rem;
+    .navbar {
+      .logo {
+        height: 50px;
+      }
+      .navbar__nav {
+        display: flex;
+        justify-content: flex-end;
+        .burger {
+          display: block;
+        }
+        .desktop {
+          // display: none;
+          gap: 5%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: $secondary-bg-color;
+          max-width: 35%;
+          width: 100%;
+          height: 250px;
+          z-index: 2;
+          position: absolute;
+          right: 0;
+          a {
+          }
+        }
       }
     }
   }
@@ -43,13 +71,15 @@ header {
 
 @media (max-width: 480px) {
   header {
-    .logo {
-      height: 30px;
-      margin-left: 5px;
-    }
-    nav {
-      a {
-        font-size: 1.15rem;
+    .navbar {
+      .logo {
+        height: 30px;
+        margin-left: 5px;
+      }
+      nav {
+        a {
+          font-size: 1.15rem;
+        }
       }
     }
   }
