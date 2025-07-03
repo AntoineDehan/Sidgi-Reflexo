@@ -14,7 +14,7 @@ import Localisation from "../../componants/localisation";
 
 import "../../styles/scss/home/style.scss";
 
-function Home() {
+function Home({ isMenuOpen, setIsMenuOpen }) {
   const [isPopupOpen, setPopupOpen] = useState(false);
 
   useEffect(() => {
@@ -28,6 +28,9 @@ function Home() {
   }, []);
   return (
     <div className="main-conteneur">
+      {isMenuOpen && (
+        <div className="black-overlay" onClick={() => setIsMenuOpen(false)} />
+      )}
       <section className="about-me" id="accueil">
         <About data={AboutData} />
       </section>
@@ -48,6 +51,7 @@ function Home() {
           <Localisation />
         </section>
       </div>
+
       <Modal isOpen={isPopupOpen} onClose={() => setPopupOpen(false)}>
         <p className="modal-text">
           Je propose une offre de lancement pour les débuts de Sidgi Réflexo!
