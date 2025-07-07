@@ -56,6 +56,10 @@ header {
         justify-content: flex-end;
         .burger {
           display: block;
+          font-size: 1.2rem;
+          border: solid $main-text-color 2px;
+          background: none;
+          color: $main-text-color;
         }
         a {
           text-align: center;
