@@ -9,7 +9,7 @@ function Modal({ isOpen, onClose, title, children }) {
         <button className="modal-close" onClick={onClose}>
           ✕
         </button>
-        <h2>{title}</h2>
+        <h2 className="modal-title">{title}</h2>
         <div className="modal-body">{children}</div>
       </div>
     </div>

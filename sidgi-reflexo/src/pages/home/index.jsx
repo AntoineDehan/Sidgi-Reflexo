@@ -5,6 +5,7 @@ import About from "../../componants/about";
 import Prestation from "../../componants/prestation";
 import Seocontent from "../../componants/seocontent";
 import Modal from "../../componants/modal";
+import Carte from "../../componants/offres_popup/carte";
 
 import AboutData from "../../data/about/dehanjenny.json";
 import PrestationData from "../../data/offres/offres.json";
@@ -15,18 +16,18 @@ import Localisation from "../../componants/localisation";
 import "../../styles/scss/home/style.scss";
 
 function Home({ isMenuOpen, setIsMenuOpen }) {
-  ///Gestion de popup - si desactivé = pas d'offre
-  // const [isPopupOpen, setPopupOpen] = useState(false);
+  // /Gestion de popup - si desactivé = pas d'offre
+  const [isPopupOpen, setPopupOpen] = useState(false);
 
-  // useEffect(() => {
-  //   if (!sessionStorage.getItem("offer-popup-shown")) {
-  //     const timer = setTimeout(() => {
-  //       setPopupOpen(true);
-  //       sessionStorage.setItem("offer-popup-shown", "true");
-  //     }, 3000);
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (!sessionStorage.getItem("offer-popup-shown")) {
+      const timer = setTimeout(() => {
+        setPopupOpen(true);
+        sessionStorage.setItem("offer-popup-shown", "true");
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, []);
   return (
     <div className="main-conteneur">
       {isMenuOpen && (
@@ -52,6 +53,13 @@ function Home({ isMenuOpen, setIsMenuOpen }) {
           <Localisation />
         </section>
       </div>
+      <Modal
+        isOpen={isPopupOpen}
+        onClose={() => setPopupOpen(false)}
+        title="🎁Les cartes cadeaux sont arrivées!🎁"
+      >
+        <Carte />
+      </Modal>
     </div>
   );
 }
