@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Mail, Facebook, Instagram } from "lucide-react";
 
 import Modal from "../modal";
 
@@ -13,7 +14,21 @@ function Footer() {
         <h2 id="contact" className="footer-title">
           Besoin de me contacter ?
         </h2>
-        <form method="POST" className="contact-form">
+        <div className="mail-contact">
+          <Mail color="#2f3a33" size={24} />
+          <a href="mailto:sidgi.reflexologie@outlook.fr">
+            sidgi.reflexologie@outlook.fr
+          </a>
+        </div>
+        <div className="reseaux">
+          <a href="https://www.facebook.com/people/Sidgi-R%C3%A9flexo/61574991002487/">
+            <Facebook color="#2f3a33" size={28} />
+          </a>
+          <a href="http://www.instagram.com/sidgi.reflexo">
+            <Instagram color="#2f3a33" size={28} />
+          </a>
+        </div>
+        {/* <form method="POST" className="contact-form">
           <label htmlFor="email">Email</label>
           <input
             type="text"
@@ -34,7 +49,7 @@ function Footer() {
           <button type="submit" className="submit-btn">
             Envoyer
           </button>
-        </form>
+        </form> */}
       </div>
       <div className="modal-conteneur">
         <button onClick={() => setMentionsOpen(true)} className="modal-btn">
