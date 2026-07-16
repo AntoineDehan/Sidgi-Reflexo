@@ -1,0 +1,40 @@
+@use "../../../styles/scss/tokens" as *;
+
+.ui-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-body;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px 30px;
+  border-radius: $radius-pill;
+  cursor: pointer;
+  line-height: 1;
+  white-space: nowrap;
+
+  &--primary {
+    background: $cream;
+    color: $green-deep;
+    &:hover { opacity: 0.9; color: $green-deep; }
+  }
+  &--secondary {
+    border: 1.5px solid $cream;
+    color: $cream;
+    &:hover { background: rgba(246, 245, 239, 0.12); color: $cream; }
+  }
+  &--sage {
+    background: $sage;
+    color: $cream;
+    padding: 11px 22px;
+    font-size: 14px;
+    &:hover { background: $green-accent; color: $cream; }
+  }
+  &--outline {
+    border: 1.5px solid $sage;
+    color: $green-deep;
+    padding: 10px 20px;
+    font-size: 14px;
+    &:hover { background: $bg-reflexo; color: $green-deep; }
+  }
+}

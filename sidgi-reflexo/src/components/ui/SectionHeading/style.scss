@@ -1,0 +1,16 @@
+@use "../../../styles/scss/tokens" as *;
+
+.section-heading {
+  &--center { text-align: center; }
+
+  .eyebrow { margin-bottom: 12px; }
+
+  &__title {
+    font-family: $font-serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.04;
+    margin: 0;
+    color: $green-deep;
+  }
+}
