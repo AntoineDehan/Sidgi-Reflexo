@@ -1,0 +1,62 @@
+@use "../_tokens" as *;
+
+.hero {
+  background: $sage;
+
+  &__inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 40px 46px 78px;
+    display: grid;
+    grid-template-columns: 1.04fr 0.96fr;
+    gap: 52px;
+    align-items: center;
+  }
+
+  &__eyebrow {
+    color: $cream-light;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    font-family: $font-serif;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 1.01;
+    margin: 0 0 22px;
+    color: $cream;
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 440px;
+    color: $cream-light;
+    margin: 0 0 32px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    height: 420px;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-img;
+
+    img { width: 100%; height: 100%; object-fit: cover; }
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 32px 24px 56px;
+  }
+  .hero__title { font-size: 44px; }
+  .hero__image { height: 300px; }
+}
