@@ -1,136 +1,97 @@
-@use "../../main.scss" as *;
+@use "../_tokens" as *;
 
-.prestation-conteneur {
+.prestation {
+  padding: 78px 46px 20px;
+
+  &__inner {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 40px;
+  }
+}
+
+.presta-card {
+  background: #fff;
+  border-radius: $radius-card;
+  overflow: hidden;
+  box-shadow: $shadow-card;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  .presta-card {
+  flex-direction: column;
+
+  &__media {
+    height: 190px;
+    position: relative;
+
+    img { width: 100%; height: 100%; object-fit: cover; }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: $sand;
+    color: $sand-text;
+    font-family: $font-label;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: $radius-pill;
+  }
+
+  &__body {
+    padding: 26px 28px 28px;
+    flex: 1;
     display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    width: 45%;
-    height: 220px;
-    background-color: $secondary-bg-color;
-    border-radius: 15px;
-    border: solid 2px $btn-color;
-    img {
-      max-width: 30%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 14px;
-    }
+    flex-direction: column;
   }
 
-  .presta-card-contenu {
+  &__title {
+    font-family: $font-serif;
+    font-weight: 600;
+    font-size: 27px;
+    margin: 0 0 10px;
+    color: $green-deep;
+  }
+
+  &__desc {
+    margin: 0 0 22px;
+    color: $green-mid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  &__footer {
+    margin-top: auto;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    height: 100%;
-    .presta-card-conteneur {
-      display: flex;
-      align-items: center;
-      gap: 20%;
-      width: 100%;
-    }
-    h2 {
-      font-family: "EB Garamond", serif;
-      margin: 3px 0 5px 0;
-      font-size: 1.75rem;
-    }
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
 
-    .presta-card-content {
-      margin: -15px 0 5px 0;
-      // text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-      color: rgb(47, 58, 51);
-    }
-    .presta-card-prix {
-      font-weight: bold;
-      margin-top: 5px;
-    }
-    .cta-conteneur {
-      align-self: center;
-    }
+  &__price {
+    font-family: $font-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: $green-deep;
+
+    &--soon { font-size: 22px; color: $green-accent; }
+  }
+
+  &__unit {
+    font-size: 14px;
+    font-family: $font-body;
+    color: $green-accent;
   }
 }
 
-@media (max-width: 1440px) {
-  .prestation-conteneur {
-    .presta-card {
-      .presta-card-contenu {
-        .presta-card-conteneur {
-          display: flex;
-          align-items: center;
-          gap: 10%;
-          width: 100%;
-        }
-        .presta-card-prix {
-          font-weight: bold;
-          margin-top: 5px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1080px) {
-  .prestation-conteneur {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 5%;
-    padding: 1rem;
-
-    .presta-card {
-      width: 80%;
-      .presta-card-contenu {
-        .presta-card-conteneur {
-          .presta-card-prix {
-            font-weight: bold;
-            margin-top: 5px;
-            width: 117.5px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 720px) {
-  .prestation-conteneur {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 4%;
-    .presta-card {
-      width: 100%;
-      height: 190px;
-      & img {
-        max-width: 25%;
-      }
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .prestation-conteneur {
-    .presta-card {
-      width: 100%;
-      height: 160px;
-      & img {
-        display: none;
-      }
-    }
-    .presta-card-contenu {
-      align-items: center;
-      height: 100%;
-      .presta-card-content {
-        text-align: center;
-      }
-      .presta-card-conteneur {
-        justify-content: center;
-      }
-    }
-  }
+@media (max-width: $bp-tablet) {
+  .prestation { padding: 56px 24px 12px; }
+  .prestation__grid { grid-template-columns: 1fr; }
 }
