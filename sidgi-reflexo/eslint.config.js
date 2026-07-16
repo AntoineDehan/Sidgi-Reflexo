@@ -29,6 +29,10 @@ export default [
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
+      // This project does not use PropTypes (no `prop-types` dependency, no
+      // usage anywhere in the codebase); disable the recommended rule instead
+      // of retrofitting validation onto every component.
+      'react/prop-types': 'off',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },

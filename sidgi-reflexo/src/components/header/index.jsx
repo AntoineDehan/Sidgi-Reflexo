@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Button from "../ui/Button";
 import "../../styles/scss/header/style.scss";
 
@@ -11,15 +10,11 @@ const LINKS = [
 ];
 
 function Header({ isMenuOpen, setIsMenuOpen }) {
-  const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev);
     setIsMenuOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
-    setIsOpen(false);
     setIsMenuOpen(false);
   };
 
@@ -43,11 +38,11 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
         </div>
 
         <button className="navbar__burger" onClick={toggleMenu} aria-label="Menu">
-          {isOpen ? "✕" : "☰"}
+          {isMenuOpen ? "✕" : "☰"}
         </button>
       </nav>
 
-      {isOpen && (
+      {isMenuOpen && (
         <div className="navbar__mobile">
           {LINKS.map((l) => (
             <a key={l.href} href={l.href} onClick={toggleMenu}>

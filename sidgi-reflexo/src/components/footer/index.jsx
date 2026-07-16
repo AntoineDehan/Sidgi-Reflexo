@@ -45,7 +45,7 @@ function Footer() {
       >
         <p>
           Conformément aux dispositions des articles 6-III et 19 de la Loi
-          n°2004-575 du 21 juin 2004 pour la Confiance dans l'Économie
+          n°2004-575 du 21 juin 2004 pour la Confiance dans l’Économie
           Numérique, dite L.C.E.N., il est porté à la connaissance des
           utilisateurs et visiteurs du site les présentes mentions légales.
         </p>
@@ -56,7 +56,7 @@ function Footer() {
           <br />
           Activité : Réflexologue certifiée
           <br />
-          Adresse : 17 Bis Rue d'Artiguelongue 33240 Val de Virvée
+          Adresse : 17 Bis Rue d’Artiguelongue 33240 Val de Virvée
           <br />
           SIRET : 87963846800022
           <br />
@@ -106,13 +106,13 @@ function Footer() {
           <strong>Prestations proposées :</strong>
           <br />
           Réflexologie plantaire et palmaire réalisées sur rendez-vous à
-          l'adresse indiquée.
+          l’adresse indiquée.
         </p>
         <p>
           <strong>Réservation et annulation :</strong>
           <br />
           Toute réservation est effective après confirmation. En cas
-          d'annulation, merci de prévenir au moins 24h à l'avance.
+          d’annulation, merci de prévenir au moins 24h à l’avance.
         </p>
         <p>
           <strong>Tarifs et paiement :</strong>
@@ -131,7 +131,7 @@ function Footer() {
         <p>
           <strong>Données personnelles :</strong>
           <br />
-          Aucune donnée personnelle n'est collectée sans votre consentement.
+          Aucune donnée personnelle n’est collectée sans votre consentement.
           Les informations recueillies lors des prises de rendez-vous sont
           strictement confidentielles.
         </p>

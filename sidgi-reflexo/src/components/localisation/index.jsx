@@ -36,7 +36,7 @@ function Localisation() {
                 itemScope
                 itemType="https://schema.org/PostalAddress"
               >
-                <span itemProp="streetAddress">17 Bis Rue d'Artiguelongue</span>,{" "}
+                <span itemProp="streetAddress">17 Bis Rue d’Artiguelongue</span>,{" "}
                 <span itemProp="postalCode">33240</span>{" "}
                 <span itemProp="addressLocality">Val de Virvée</span>
               </span>
@@ -52,7 +52,7 @@ function Localisation() {
               </span>
             </div>
             <p className="local__note">
-              Parking facile sur la place de l'église. Entrez dans la cour
+              Parking facile sur la place de l’église. Entrez dans la cour
               gravillonnée : je me situe au bout du chemin, au niveau du portail
               en bois.
             </p>
