@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "./componants/header";
-import Footer from "./componants/footer";
+import Header from "./components/header/index.jsx";
+import Footer from "./components/footer/index.jsx";
 import Home from "./pages/home/index.jsx";
 
 function App() {

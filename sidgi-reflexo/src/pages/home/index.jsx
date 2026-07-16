@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 
-import Banner from "../../componants/banner";
-import About from "../../componants/about";
-import Prestation from "../../componants/prestation";
-import Seocontent from "../../componants/seocontent";
-import Modal from "../../componants/modal";
-import Carte from "../../componants/offres_popup/carte";
+import Banner from "../../components/banner";
+import About from "../../components/about";
+import Prestation from "../../components/prestation";
+import Seocontent from "../../components/seocontent";
+import Modal from "../../components/modal";
+import Carte from "../../components/offres_popup/carte";
 
 import AboutData from "../../data/about/dehanjenny.json";
 import PrestationData from "../../data/offres/offres.json";
 import PopupData from "../../data/offres/offres_popup.json";
 import SeoContentData from "../../data/seocontent/content.json";
-import Localisation from "../../componants/localisation";
+import Localisation from "../../components/localisation";
 
 import "../../styles/scss/home/style.scss";
 
