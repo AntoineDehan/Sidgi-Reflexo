@@ -10,7 +10,13 @@ function About({ data }) {
     <section className="about" id="apropos">
       <div className="about__inner">
         <div className="about__portrait">
-          <img src={PORTRAIT_IMG} alt="Portrait de Jenny Dehan, réflexologue" />
+          <img
+            src={PORTRAIT_IMG}
+            alt="Portrait de Jenny Dehan, réflexologue"
+            width="650"
+            height="883"
+            loading="lazy"
+          />
         </div>
         <div className="about__content">
           <SectionHeading eyebrow="À propos" title={data.titre} />

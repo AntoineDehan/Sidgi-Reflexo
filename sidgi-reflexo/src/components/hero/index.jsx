@@ -32,7 +32,13 @@ function Hero() {
           </div>
         </div>
         <div className="hero__image">
-          <img src={HERO_IMG} alt="Séance de réflexologie plantaire dans un cadre apaisant" />
+          <img
+            src={HERO_IMG}
+            alt="Séance de réflexologie plantaire dans un cadre apaisant"
+            width="1200"
+            height="1200"
+            fetchPriority="high"
+          />
         </div>
       </div>
     </section>

@@ -9,11 +9,17 @@ function PrestaCard({ presta }) {
   return (
     <article className="presta-card">
       <div className="presta-card__media">
-        <img src={image} alt={`Illustration de ${titre}`} />
+        <img
+          src={image}
+          alt={`Illustration de ${titre}`}
+          width="640"
+          height="426"
+          loading="lazy"
+        />
         {soon && <span className="presta-card__badge">Bientôt</span>}
       </div>
       <div className="presta-card__body">
-        <h4 className="presta-card__title">{titre}</h4>
+        <h3 className="presta-card__title">{titre}</h3>
         <p className="presta-card__desc">{content}</p>
         <div className="presta-card__footer">
           {soon ? (

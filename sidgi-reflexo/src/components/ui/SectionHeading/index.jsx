@@ -5,7 +5,7 @@ function SectionHeading({ eyebrow, title, center = false }) {
   return (
     <div className={`section-heading ${center ? "section-heading--center" : ""}`}>
       {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-      <h3 className="section-heading__title">{title}</h3>
+      <h2 className="section-heading__title">{title}</h2>
     </div>
   );
 }

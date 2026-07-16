@@ -16,7 +16,13 @@ function Seocontent({ data }) {
           </div>
         </div>
         <div className="seo__image">
-          <img src={data.image} alt="Séance de réflexologie en cours" />
+          <img
+            src={data.image}
+            alt="Séance de réflexologie en cours"
+            width="952"
+            height="859"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
