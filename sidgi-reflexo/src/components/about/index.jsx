@@ -1,24 +1,27 @@
+import SectionHeading from "../ui/SectionHeading";
 import "../../styles/scss/about/style.scss";
 
+const PORTRAIT_IMG = "/images/about_picture.webp";
+
 function About({ data }) {
+  const paragraphs = data.content.split("\n").filter((line) => line.trim() !== "");
+
   return (
-    <div className="about-conteneur">
-      <div className="about-image">
-        <img
-          src={data.image}
-          alt="Photo personnelle présentant Jenny Dehan"
-          className="about-image"
-        />
-      </div>
-      <div className="about-content">
-        <h2>{data.titre}</h2>
-        <div>
-          {data.content.split("\n").map((line, index) => (
-            <p key={index}>{line}</p>
-          ))}
+    <section className="about" id="apropos">
+      <div className="about__inner">
+        <div className="about__portrait">
+          <img src={PORTRAIT_IMG} alt="Portrait de Jenny Dehan, réflexologue" />
+        </div>
+        <div className="about__content">
+          <SectionHeading eyebrow="À propos" title={data.titre} />
+          <div className="about__text">
+            {paragraphs.map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
