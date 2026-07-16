@@ -67,11 +67,11 @@ function Footer() {
         <p>
           <strong>Hébergement :</strong>
           <br />
-          Nom de l’hébergeur : Pas encore
+          Nom de l’hébergeur : OVH SAS
           <br />
-          Adresse : Pas encore
+          Adresse : 2 rue Kellermann, 59100 Roubaix, France
           <br />
-          Site : Pas encore
+          Site : https://www.ovhcloud.com
         </p>
         <p>
           <strong>Responsabilité :</strong>
