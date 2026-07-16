@@ -27,6 +27,20 @@ $shadow-portrait: 0 16px 40px rgba(50, 60, 35, 0.18);
 $bp-tablet: 900px;
 $bp-mobile: 768px;
 
+:root {
+  --sage: #{$sage};
+  --green-deep: #{$green-deep};
+  --green-mid: #{$green-mid};
+  --green-accent: #{$green-accent};
+  --cream: #{$cream};
+  --cream-card: #{$cream-card};
+  --cream-light: #{$cream-light};
+  --bg-page: #{$bg-page};
+  --bg-reflexo: #{$bg-reflexo};
+  --sand: #{$sand};
+  --sand-text: #{$sand-text};
+}
+
 @mixin eyebrow {
   font-family: $font-label;
   font-size: 12px;

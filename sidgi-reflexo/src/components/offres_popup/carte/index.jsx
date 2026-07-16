@@ -15,7 +15,7 @@ function Carte() {
             prendre soin de soi, relâcher les tensions et de retrouver équilibre
             et sérénité.
           </p>
-          <p className="price">Disponnile au tarif de 45€</p>
+          <p className="price">Disponible au tarif de 45€</p>
         </div>
 
         <img
@@ -28,13 +28,13 @@ function Carte() {
       <div className="modal-contact">
         <h3>Contactez-moi :</h3>
         <div className="item">
-          <Mail color="#869a6d" size={24} />
+          <Mail color="var(--green-accent)" size={24} />
           <a href="mailto:sidgi.reflexologie@outlook.fr">
             sidgi.reflexologie@outlook.fr
           </a>
         </div>
         <div className="item">
-          <Smartphone color="#869a6d" size={24} />
+          <Smartphone color="var(--green-accent)" size={24} />
           <p>07 85 84 11 51</p>
         </div>
       </div>

@@ -13,11 +13,6 @@
     align-items: center;
   }
 
-  &__eyebrow {
-    color: $cream-light;
-    margin-bottom: 22px;
-  }
-
   &__title {
     font-family: $font-serif;
     font-weight: 600;
@@ -49,6 +44,11 @@
 
     img { width: 100%; height: 100%; object-fit: cover; }
   }
+}
+
+.eyebrow.hero__eyebrow {
+  color: $cream-light;
+  margin-bottom: 22px;
 }
 
 @media (max-width: $bp-tablet) {

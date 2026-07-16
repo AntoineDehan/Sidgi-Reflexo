@@ -49,7 +49,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
               {l.label}
             </a>
           ))}
-          <Button variant="sage" href={BOOKING_URL} onClick={toggleMenu}>
+          <Button variant="primary" href={BOOKING_URL} onClick={toggleMenu}>
             Réserver
           </Button>
         </div>
