@@ -28,13 +28,13 @@ function Carte() {
       <div className="modal-contact">
         <h3>Contactez-moi :</h3>
         <div className="item">
-          <Mail color="#a8b5a2" size={24} />
+          <Mail color="#869a6d" size={24} />
           <a href="mailto:sidgi.reflexologie@outlook.fr">
             sidgi.reflexologie@outlook.fr
           </a>
         </div>
         <div className="item">
-          <Smartphone color="#a8b5a2" size={24} />
+          <Smartphone color="#869a6d" size={24} />
           <p>07 85 84 11 51</p>
         </div>
       </div>
