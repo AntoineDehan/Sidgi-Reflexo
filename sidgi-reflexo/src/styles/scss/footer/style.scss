@@ -1,94 +1,66 @@
-@use "../../main.scss" as *;
+@use "../_tokens" as *;
 
-.footer-conteneur {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Roboto", serif;
-  background-color: $secondary-bg-color;
-  color: $contraste-color;
-  .modal-conteneur {
-    margin-top: 20px;
-    .modal-btn {
-      border: none;
+.footer {
+  background: $sage;
+  color: $cream;
+  padding: 58px 46px;
+  text-align: center;
+  margin-top: 72px;
+
+  &__inner { max-width: 720px; margin: 0 auto; }
+
+  &__title {
+    font-family: $font-serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0 0 18px;
+    color: $cream;
+  }
+
+  &__mail {
+    color: $cream;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(246, 245, 239, 0.5);
+    padding-bottom: 2px;
+    &:hover { color: $cream; opacity: 0.85; }
+  }
+
+  &__social {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin: 26px 0 22px;
+  }
+
+  &__social-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1.5px solid $cream;
+    color: $cream;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover { background: rgba(246, 245, 239, 0.14); color: $cream; }
+  }
+
+  &__legal {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: $cream-light;
+
+    button {
       background: none;
-      color: $contraste-color;
-      text-decoration: underline;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-  .footer-title {
-    font-size: 2.4rem;
-    text-align: center;
-  }
-  a {
-    color: $contraste-color;
-  }
-  .mail-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    a {
-      color: $contraste-color;
-      text-decoration: none;
-      font-size: 1.15rem;
-      &:visited {
-        text-decoration: none;
-      }
-    }
-  }
-  .reseaux {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 25px;
-  }
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-
-    .submit-btn {
-      margin-top: 10px;
-      width: 50%;
-      height: 30px;
-      align-self: center;
-      border-radius: 10px;
-      border: $bg-color solid 2px;
-      color: $contraste-color;
-      background-color: $main-text-color;
-    }
-    label {
-      font-size: 1.25rem;
-      margin-bottom: 5px;
-      margin-top: 15px;
-      color: $contraste-color;
-    }
-    .input {
-      width: 350px;
-      border-radius: 8px;
-      border: $bg-color solid 2px;
-    }
-    .email-input {
-      height: 25px;
-    }
-    .message-input {
-      height: 200px;
-    }
-  }
-}
-
-@media (max-width: 720px) {
-  .footer-conteneur {
-    .contact-form {
-      justify-content: center;
-      align-items: center;
-      .input {
-        width: 250px;
-      }
+      border: none;
+      color: $cream-light;
+      font-family: $font-body;
+      font-size: 13px;
+      cursor: pointer;
+      padding: 0;
+      &:hover { color: $cream; }
     }
   }
 }
