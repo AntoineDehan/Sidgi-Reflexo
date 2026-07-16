@@ -1,0 +1,24 @@
+@use "./tokens" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: $bg-page;
+  font-family: $font-body;
+  color: $green-deep;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: $green-deep;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}

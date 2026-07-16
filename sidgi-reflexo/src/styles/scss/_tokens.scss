@@ -1,0 +1,36 @@
+// Design system tokens — Sidgi Réflexo (piste 2a)
+$sage: #9fb088;
+$green-deep: #45562f;
+$green-mid: #5a684a;
+$green-accent: #869a6d;
+$cream: #f6f5ef;
+$cream-card: #f3f2ec;
+$cream-light: #eef0e5;
+$bg-page: #e6e5dd;
+$bg-reflexo: #e7ecdd;
+$sand: #d8caa6;
+$sand-text: #4a3f28;
+
+$font-serif: "Cormorant Garamond", serif;
+$font-label: "Archivo", sans-serif;
+$font-body: "Mulish", sans-serif;
+
+$radius-pill: 999px;
+$radius-card: 18px;
+$radius-lg: 22px;
+
+$shadow-frame: 0 40px 90px rgba(50, 60, 35, 0.22);
+$shadow-card: 0 16px 42px rgba(50, 60, 35, 0.1);
+$shadow-img: 0 26px 54px rgba(40, 50, 30, 0.32);
+$shadow-portrait: 0 16px 40px rgba(50, 60, 35, 0.18);
+
+$bp-tablet: 900px;
+$bp-mobile: 768px;
+
+@mixin eyebrow {
+  font-family: $font-label;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: $green-accent;
+}
