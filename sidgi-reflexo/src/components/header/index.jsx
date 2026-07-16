@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import LogoImg from "../../assets/logo_header.webp";
 import "../../styles/scss/header/style.scss";
 
 const BOOKING_URL = "https://calendly.com/sidgi-reflexologie/plantaire";
@@ -21,9 +22,14 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
   return (
     <header className="site-header">
       <nav className="navbar">
-        <a href="#accueil" className="navbar__logo" onClick={closeMenu}>
-          <span className="navbar__logo-main">SIDGI</span>
-          <span className="navbar__logo-sub">Réflexo</span>
+        <a href="#accueil" className="navbar__logo" onClick={closeMenu} aria-label="Sidgi Réflexo — accueil">
+          <img
+            src={LogoImg}
+            alt="Logo Sidgi Réflexo"
+            className="navbar__logo-img"
+            width="295"
+            height="178"
+          />
         </a>
 
         <div className="navbar__desktop">
