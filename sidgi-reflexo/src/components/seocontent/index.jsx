@@ -1,20 +1,25 @@
+import SectionHeading from "../ui/SectionHeading";
 import "../../styles/scss/content/style.scss";
 
 function Seocontent({ data }) {
+  const paragraphs = data.content.split("\n").filter((line) => line.trim() !== "");
+
   return (
-    <div className="seo-conteneur">
-      <div className="seo-content">
-        <h2>{data.titre}</h2>
-        <div>
-          {data.content.split("\n").map((line, index) => (
-            <p key={index}>{line}</p>
-          ))}
+    <section className="seo" id="reflexologie">
+      <div className="seo__inner">
+        <div className="seo__content">
+          <SectionHeading eyebrow="Comprendre" title={data.titre} />
+          <div className="seo__text">
+            {paragraphs.map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
+          </div>
+        </div>
+        <div className="seo__image">
+          <img src={data.image} alt="Séance de réflexologie en cours" />
         </div>
       </div>
-      <div className="seo-image">
-        <img src={data.image} alt="Image d'illustration de réflexologie" />
-      </div>
-    </div>
+    </section>
   );
 }
 
